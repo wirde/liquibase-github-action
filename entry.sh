@@ -120,5 +120,6 @@ check_required_param $OPERATION password $PASSWORD
 validate_operation
 
 ls
+ls /
 
-./docker-entrypoint.sh "${PARAMS[@]}" $OPERATION "${VALUES[@]}"
+docker-entrypoint.sh "${PARAMS[@]}" $OPERATION "${VALUES[@]}"
