@@ -120,6 +120,8 @@ check_required_param $OPERATION password $PASSWORD
 validate_operation
 
 ls
-ls /
+ls /liquibase
+ls /liquibase/*
+tree /liquibase
 
 docker-entrypoint.sh "${PARAMS[@]}" $OPERATION "${VALUES[@]}"
